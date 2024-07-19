@@ -1,11 +1,11 @@
 import pandas as pd
 
 pathA = "F:/共享/亚马逊/货师傅/发货订单/1111.xlsx"
-pathB = "F:/共享/亚马逊/货师傅/发货订单/HSFDaoChu.xlsx"
+pathD = "F:/共享/亚马逊/货师傅/发货订单/HSFDaoChu.xlsx"
 pathC = "F:/共享/亚马逊/货师傅/发货订单/FaHuo.xlsx"
 
 temu_df = pd.read_excel(pathA)
-hsf_df = pd.read_excel(pathB)
+hsf_df = pd.read_excel(pathD)
 fh_df = pd.read_excel(pathC)
 
 # 删除发货模板除第一行外的所有值
@@ -41,4 +41,4 @@ for i in range(len(temu_df)):
 
 fh_df.to_excel(pathC, index=False)
 
-print('success')
+print('转换成功')

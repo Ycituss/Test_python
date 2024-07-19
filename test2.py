@@ -42,7 +42,11 @@ sku_list = {
     '9099181244': 'X0048FC81D',
     '6951960713': 'X0048FC813',
     '5303569445': 'X0048FC80T',
-    '2303483163': 'X004869WLB'
+    '2303483163': 'X004869WLB',
+    '1848137163': 'KnittedDUCK5PCS',
+    '8867809676': 'ANT8PCS',
+    '---temp---': '---temp---',
+    '1161281136': 'X0047YAX8F'
 }
 
 # 读取源 TEMU 文件
@@ -94,4 +98,4 @@ for j in range(len(temu_df)):
 # 保存修改后的目标 Excel 文件
 hsf_df.to_excel(pathB, index=False)
 
-print('success')
+print('转换成功')
